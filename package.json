@@ -1,6 +1,6 @@
 {
   "name": "",
-  "version": "3.0.2",
+  "version": "3.0.3-beta.0",
   "description": "",
   "keywords": [
     ""
@@ -20,11 +20,12 @@
     "eslint": "eslint ts --ext .ts",
     "test": "mocha",
     "release": "standard-version",
-    "release:first": "npm run release:before && npm run release -- --first-release",
-    "release:prerelease": "npm run release:before && npm run release -- --prerelease alpha",
-    "release:patch": "npm run release:before && npm run release -- --release-as patch",
-    "release:minor": "npm run release:before && npm run release -- --release-as minor",
-    "release:major": "npm run release:before && npm run release -- --release-as major",
+    "release:first": "npm run release:before && npm run release -- -f",
+    "release:alpha": "npm run release:before && npm run release -- -p alpha",
+    "release:beta": "npm run release:before && npm run release -- -p beta",
+    "release:patch": "npm run release:before && npm run release -- -r patch",
+    "release:minor": "npm run release:before && npm run release -- -r minor",
+    "release:major": "npm run release:before && npm run release -- -r major",
     "release:before": "npm run  eslint"
   },
   "devDependencies": {
