@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/ll84273096/base-npm-ts/compare/v2.2.1...v3.0.0) (2019-05-10)
+
+
+### Chores
+
+* **build:** Modify webpack ([bbae362](https://github.com/ll84273096/base-npm-ts/commit/bbae362))
+
+
+### BREAKING CHANGES
+
+* **build:** none
+
+
+
 <a name="2.2.1"></a>
 ## [2.2.1](https://github.com/ll84273096/base-npm-ts/compare/v2.2.0...v2.2.1) (2019-05-10)
 
