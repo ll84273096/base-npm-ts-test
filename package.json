@@ -1,6 +1,6 @@
 {
   "name": "",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "",
   "keywords": [
     ""
@@ -25,7 +25,8 @@
     "release:prerelease": "npm run beforePublish && npm run release -- --prerelease alpha",
     "release:patch": "npm run beforePublish && npm run release -- --prerelease-as patch",
     "release:minor": "npm run beforePublish && npm run release -- --prerelease-as minor",
-    "release:major": "npm run beforePublish && npm run release -- --prerelease-as major"
+    "release:major": "npm run beforePublish && npm run release -- --prerelease-as major",
+    "before:release": "npm run  eslint"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.7.0",
