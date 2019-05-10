@@ -23,7 +23,7 @@ module.exports = {
     },
     externals : {
         lodash : {
-            commonjs: 'lodash',
+            commonjs: 'lodash', 
             amd: 'lodash',
             root: '_'
         }
