@@ -21,12 +21,12 @@
     "eslint": "eslint ts --ext .ts",
     "test": "mocha",
     "beforePublish": "npm run  eslint&& npm run build",
-    "release:first": "npm run beforePublish && npm run release -- --first-release",
-    "release:prerelease": "npm run beforePublish && npm run release -- --prerelease alpha",
-    "release:patch": "npm run beforePublish && npm run release -- --prerelease-as patch",
-    "release:minor": "npm run beforePublish && npm run release -- --prerelease-as minor",
-    "release:major": "npm run beforePublish && npm run release -- --prerelease-as major",
-    "before:release": "npm run  eslint"
+    "release:first": "npm run release:before && npm run release -- --first-release",
+    "release:prerelease": "npm run release:before && npm run release -- --prerelease alpha",
+    "release:patch": "npm run release:before && npm run release -- --prerelease-as patch",
+    "release:minor": "npm run release:before && npm run release -- --prerelease-as minor",
+    "release:major": "npm run release:before && npm run release -- --prerelease-as major",
+    "release:before": "npm run  eslint"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.7.0",
