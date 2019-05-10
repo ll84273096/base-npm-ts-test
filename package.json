@@ -1,6 +1,6 @@
 {
   "name": "",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "",
   "keywords": [
     ""
@@ -22,9 +22,9 @@
     "release": "standard-version",
     "release:first": "npm run release:before && npm run release -- --first-release",
     "release:prerelease": "npm run release:before && npm run release -- --prerelease alpha",
-    "release:patch": "npm run release:before && npm run release -- --prerelease-as patch",
-    "release:minor": "npm run release:before && npm run release -- --prerelease-as minor",
-    "release:major": "npm run release:before && npm run release -- --prerelease-as major",
+    "release:patch": "npm run release:before && npm run release -- --release-as patch",
+    "release:minor": "npm run release:before && npm run release -- --release-as minor",
+    "release:major": "npm run release:before && npm run release -- --release-as major",
     "release:before": "npm run  eslint"
   },
   "devDependencies": {
