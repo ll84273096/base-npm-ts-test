@@ -21,13 +21,6 @@ module.exports = {
     resolve: {
         extensions: ['.tsx', '.ts', '.js']
     },
-    externals : {
-        lodash : {
-            commonjs: 'lodash',
-            amd: 'lodash',
-            root: '_'
-        }
-    },
     plugins: [
         new CleanWebpackPlugin(),
     ],
